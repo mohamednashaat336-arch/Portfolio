@@ -1,0 +1,127 @@
+.about-section {
+  background-color: var(--bg-secondary);
+  position: relative;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.about-lead {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 1.8vw, 1.35rem);
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.about-points {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-point {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.about-point-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: var(--accent-primary-dim);
+  border: 1px solid var(--accent-primary-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.about-point-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.about-point-text {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.about-facts {
+  padding: 30px;
+  box-shadow: 0 20px 48px -16px var(--shadow-card);
+}
+
+.about-facts-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 22px;
+}
+
+.about-facts-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-fact {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 14px 0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.about-fact:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.about-fact:last-child {
+  padding-bottom: 0;
+}
+
+.about-fact-label {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+.about-fact-value {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.about-fact-sub {
+  display: block;
+  margin-top: 2px;
+  font-family: var(--font-body);
+  font-size: 0.86rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+@media (min-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1.05fr 0.95fr !important;
+    gap: 56px !important;
+  }
+}
